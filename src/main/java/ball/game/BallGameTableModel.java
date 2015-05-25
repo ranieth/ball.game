@@ -97,7 +97,7 @@ public class BallGameTableModel implements TableModel {
 	}
 
 	/**
-	 * Returns with the class of the wanted column
+	 * Returns with the class of the wanted column.
 	 * 
 	 * @param columnIndex the index of the wanted column
 	 * @return the class of the wanted column

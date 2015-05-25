@@ -9,15 +9,23 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Main class of the ball in the maze game what can be played in terminal or as a window application
+ * Main class of the ball in the maze game what can be played in terminal or as a window application.
  * 
  * @author ranieth
  *
  */
 public class BallGame{
 
+	/**
+	 * Initalizes the logger object to create logs from the game.
+	 */
 	private static Logger logger = LoggerFactory.getLogger(BallGame.class);
 
+	/**
+	 * Main method of the game.
+	 * 
+	 * @param args given arguments to determine interface type and starting board file
+	 */
 	public static void main(String[] args) {
 
 		if(args.length < 2){

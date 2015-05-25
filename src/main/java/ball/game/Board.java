@@ -45,7 +45,10 @@ public class Board {
 	 * Represents the actual board with integer values.
 	 */
 	ArrayList<ArrayList<Integer>> Field = new ArrayList<ArrayList<Integer>>();
-	
+
+	/**
+	 * Initalizes the logger object to create logs from the game.
+	 */
 	private static Logger logger = LoggerFactory.getLogger(Board.class);
 	
 	/**
@@ -493,7 +496,7 @@ public class Board {
 		 */
 		int row;
 		/**
-		 * Column coordinate of the ball
+		 * Column coordinate of the ball.
 		 */
 		int column;
 		
@@ -544,7 +547,7 @@ public class Board {
 		 * Setting up the start position of the ball with the given coordinates.
 		 * 
 		 * @param row the row coordinate of the ball
-		 * @param the column coordinate of the ball
+		 * @param column the column coordinate of the ball
 		 */
 		void startPosition(int row, int column){
 
@@ -718,7 +721,7 @@ public class Board {
 		}
 
 		/**
-		 * Writes out the actual gaming field with the ball to the standard output
+		 * Writes out the actual gaming field with the ball to the standard output.
 		 */
 		public void printField(){
 			
