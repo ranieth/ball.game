@@ -5,6 +5,6 @@ A little ball in the maze game created for Programozási Környezetek at Univers
 
 The program provides terminal and window interface to play.
 
-Created by
+> Created by
 > ranieth
 > Tamás Csopa
