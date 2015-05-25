@@ -85,7 +85,7 @@ public class CreateWindow extends JFrame {
 		ball = board.new Ball();
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 340, 255);
+		setBounds(100, 100, 340, 270);
 
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);

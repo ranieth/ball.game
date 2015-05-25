@@ -54,6 +54,51 @@ public class Board {
 	private static Logger logger = LoggerFactory.getLogger(Board.class);
 	
 	/**
+	 * Constructs the board with the hard coded default parameters
+	 * 
+	 * Constructs the board with the hard coded default parameters (needed for ProgTech)
+	 */
+	public Board(){
+		
+		row = 12;
+		column = 13;
+		
+		start_row = 2;
+		start_column = 8;
+		
+		setGoal(9,4);
+		
+		setWall(0,1);
+		setWall(0,7);
+		
+		setWall(1,4);
+		setWall(1,12);
+		
+		setWall(3,5);
+		setWall(3,11);
+		
+		setWall(4,2);
+		
+		setWall(5,7);
+		setWall(5,9);
+		
+		setWall(6,6);
+		setWall(6,12);
+		
+		setWall(8,0);
+		setWall(8,8);
+		
+		setWall(9,3);
+		setWall(9,5);
+		
+		setWall(10,4);
+		
+		setWall(11,7);
+		setWall(11,11);
+		
+	}
+	
+	/**
 	 * Constructs a simple all zero board sized to the given row and column parameters.
 	 * 
 	 * @param row how many row long will the board be
