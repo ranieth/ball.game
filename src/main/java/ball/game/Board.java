@@ -1,6 +1,8 @@
 package ball.game;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
@@ -80,6 +82,31 @@ public class Board {
 		InputStream file = classLoader.getResourceAsStream(filename);
 		
 		readFieldSax(file);
+		
+	}
+	
+	/**
+	 * Constructs the board from a provided xml file.
+	 * 
+	 * @param file the xml file which contains the parameters of a board
+	 */
+	public Board(File file){
+
+		logger.info("Reading game from file");
+		
+		InputStream stream = null;
+		
+		try {
+			
+			stream = new FileInputStream(file);
+			
+		} catch (FileNotFoundException e) {
+			
+			e.printStackTrace();
+			
+		}
+		
+		readFieldSax(stream);
 		
 	}
 	

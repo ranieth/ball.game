@@ -1,50 +1,73 @@
-21:43:21.444 [main] INFO  ball.game.Board - Reading game from file ball.game.001.xml
-21:43:21.548 [main] INFO  ball.game.Board - Reading game board from xml
-21:43:21.550 [main] INFO  ball.game.Board - Creating game board
-21:43:21.551 [main] INFO  ball.game.Board - Setting up board goal cell 9,4
-21:43:21.552 [main] INFO  ball.game.Board - Setting up wall on the board 0,1
-21:43:21.552 [main] INFO  ball.game.Board - Setting up wall on the board 0,7
-21:43:21.552 [main] INFO  ball.game.Board - Setting up wall on the board 1,4
-21:43:21.552 [main] INFO  ball.game.Board - Setting up wall on the board 1,12
-21:43:21.553 [main] INFO  ball.game.Board - Setting up wall on the board 3,5
-21:43:21.553 [main] INFO  ball.game.Board - Setting up wall on the board 3,11
-21:43:21.553 [main] INFO  ball.game.Board - Setting up wall on the board 4,2
-21:43:21.553 [main] INFO  ball.game.Board - Setting up wall on the board 5,7
-21:43:21.554 [main] INFO  ball.game.Board - Setting up wall on the board 5,9
-21:43:21.554 [main] INFO  ball.game.Board - Setting up wall on the board 6,6
-21:43:21.554 [main] INFO  ball.game.Board - Setting up wall on the board 6,12
-21:43:21.554 [main] INFO  ball.game.Board - Setting up wall on the board 8,0
-21:43:21.555 [main] INFO  ball.game.Board - Setting up wall on the board 8,8
-21:43:21.556 [main] INFO  ball.game.Board - Setting up wall on the board 9,3
-21:43:21.556 [main] INFO  ball.game.Board - Setting up wall on the board 9,5
-21:43:21.556 [main] INFO  ball.game.Board - Setting up wall on the board 10,4
-21:43:21.556 [main] INFO  ball.game.Board - Setting up wall on the board 11,7
-21:43:21.557 [main] INFO  ball.game.Board - Setting up wall on the board 11,11
-21:43:21.558 [main] INFO  ball.game.Board - Setting up ball on 2,8
-21:43:21.558 [main] INFO  ball.game.BallGame - User picked swing window interface
-21:43:21.559 [main] INFO  ball.game.BallGame - Starting game
-21:43:21.868 [main] INFO  ball.game.BallGame - Ending game
-21:43:31.751 [AWT-EventQueue-0] INFO  ball.game.Board - Moving the ball down on the board from 2,8
-21:43:31.751 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 3,8
-21:43:31.751 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 3,8
-21:43:31.751 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 4,8
-21:43:31.752 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 4,8
-21:43:31.752 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 5,8
-21:43:31.752 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 5,8
-21:43:31.752 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 6,8
-21:43:31.753 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 6,8
-21:43:31.753 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 7,8
-21:43:31.753 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 7,8
-21:43:31.753 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 8,8
-21:43:31.753 [AWT-EventQueue-0] INFO  ball.game.Board - Ball reached cell 7,8
-21:43:32.362 [AWT-EventQueue-0] INFO  ball.game.Board - Moving the ball right on the board
-21:43:32.362 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 7,9
-21:43:32.363 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 7,9
-21:43:32.364 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 7,10
-21:43:32.364 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 7,10
-21:43:32.364 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 7,11
-21:43:32.364 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 7,11
-21:43:32.364 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 7,12
-21:43:32.364 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 7,12
-21:43:32.364 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 7,13
-21:43:32.365 [AWT-EventQueue-0] INFO  ball.game.Board - Ball reached cell 7,12
+22:52:38.254 [main] INFO  ball.game.BallGame - User picked swing window interface
+22:52:38.354 [main] INFO  ball.game.BallGame - Starting game
+22:52:38.645 [main] INFO  ball.game.BallGame - Ending game
+22:52:38.718 [AWT-EventQueue-0] INFO  ball.game.Board - Reading game from file ball.game.001.xml
+22:52:38.721 [AWT-EventQueue-0] INFO  ball.game.Board - Reading game board from xml
+22:52:38.723 [AWT-EventQueue-0] INFO  ball.game.Board - Creating game board
+22:52:38.724 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up board goal cell 9,4
+22:52:38.725 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 0,1
+22:52:38.725 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 0,7
+22:52:38.725 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 1,4
+22:52:38.725 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 1,12
+22:52:38.726 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 3,5
+22:52:38.726 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 3,11
+22:52:38.726 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 4,2
+22:52:38.726 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 5,7
+22:52:38.727 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 5,9
+22:52:38.732 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 6,6
+22:52:38.733 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 6,12
+22:52:38.733 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 8,0
+22:52:38.733 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 8,8
+22:52:38.733 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 9,3
+22:52:38.734 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 9,5
+22:52:38.734 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 10,4
+22:52:38.734 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 11,7
+22:52:38.734 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 11,11
+22:52:38.735 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up ball on 2,8
+22:52:40.741 [AWT-EventQueue-0] INFO  ball.game.Board - Moving the ball down on the board from 2,8
+22:52:40.742 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 3,8
+22:52:40.742 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 3,8
+22:52:40.742 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 4,8
+22:52:40.742 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 4,8
+22:52:40.743 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 5,8
+22:52:40.743 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 5,8
+22:52:40.743 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 6,8
+22:52:40.743 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 6,8
+22:52:40.744 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 7,8
+22:52:40.744 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 7,8
+22:52:40.744 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 8,8
+22:52:40.744 [AWT-EventQueue-0] INFO  ball.game.Board - Ball reached cell 7,8
+22:52:41.026 [AWT-EventQueue-0] INFO  ball.game.Board - Moving the ball right on the board
+22:52:41.027 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 7,9
+22:52:41.027 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 7,9
+22:52:41.027 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 7,10
+22:52:41.027 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 7,10
+22:52:41.027 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 7,11
+22:52:41.027 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 7,11
+22:52:41.027 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 7,12
+22:52:41.027 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 7,12
+22:52:41.027 [AWT-EventQueue-0] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 7,13
+22:52:41.027 [AWT-EventQueue-0] INFO  ball.game.Board - Ball reached cell 7,12
+22:52:47.910 [AWT-EventQueue-0] INFO  ball.game.Board - Reading game from file
+22:52:47.910 [AWT-EventQueue-0] INFO  ball.game.Board - Reading game board from xml
+22:52:47.922 [AWT-EventQueue-0] INFO  ball.game.Board - Creating game board
+22:52:47.922 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up board goal cell 9,4
+22:52:47.922 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 0,1
+22:52:47.922 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 0,7
+22:52:47.923 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 1,4
+22:52:47.923 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 1,12
+22:52:47.923 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 3,5
+22:52:47.923 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 3,11
+22:52:47.923 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 4,2
+22:52:47.923 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 5,7
+22:52:47.924 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 5,9
+22:52:47.938 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 6,6
+22:52:47.938 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 6,12
+22:52:47.938 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 8,0
+22:52:47.938 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 8,8
+22:52:47.938 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 9,3
+22:52:47.939 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 9,5
+22:52:47.939 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 10,4
+22:52:47.939 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 11,7
+22:52:47.939 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 11,11
+22:52:47.939 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up ball on 2,8

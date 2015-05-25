@@ -1,3 +1,4 @@
+	
 package ball.game;
 
 import java.awt.EventQueue;
@@ -15,13 +16,9 @@ import ball.game.Board.Ball;
 public class SwingWindow extends Window {
 
 	/**
-	 * The board of the game.
+	 * Contains the opened files name
 	 */
-	Board board;
-	/**
-	 * The ball of the game.
-	 */
-	Board.Ball ball;
+	String filename;
 
 	/**
 	 * Constructs the game and utilities to play it in swing window.
@@ -30,8 +27,7 @@ public class SwingWindow extends Window {
 	 */
 	public SwingWindow(String filename){
 
-		board = new Board(filename);
-		ball = board.new Ball();
+		this.filename = filename;
 		
 	}
 
@@ -46,7 +42,7 @@ public class SwingWindow extends Window {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					CreateWindow frame = new CreateWindow(board,ball);
+					CreateWindow frame = new CreateWindow(filename);
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();

@@ -5,10 +5,15 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.EventQueue;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
 
 import javax.swing.JButton;
+import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JMenuBar;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
@@ -59,21 +64,80 @@ public class CreateWindow extends JFrame {
 	boolean win = false;
 	
 	/**
+	 * The board of the game.
+	 */
+	Board board;
+	/**
+	 * The ball of the game.
+	 */
+	Board.Ball ball;
+
+	/**
 	 * Constructs the window for the game.
 	 * 
 	 * Constructs the window pane, and create the content of the window.
 	 * 
-	 * @param board the board of the game
-	 * @param ball the ball of the game
+	 * @param filename the name of the xml file to import
 	 */
-	public CreateWindow(Board board, Board.Ball ball) {
+	public CreateWindow(String filename) {
+		
+		board = new Board(filename);
+		ball = board.new Ball();
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 340, 255);
+
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+
+		JButton buttonImport = new JButton("Import xml");
+		
+		buttonImport.addActionListener(new ActionListener(){
+			
+			@Override
+            public void actionPerformed(ActionEvent arg0) {
+				
+                JFileChooser openFile = new JFileChooser();
+                int returnValue = openFile.showOpenDialog(null);
+
+    			if(returnValue == JFileChooser.APPROVE_OPTION){
+    				
+    				File file = openFile.getSelectedFile();
+    				
+    				board = new Board(file);
+    				ball = board.new Ball();
+    				
+    				contentPane.removeAll();
+    				
+    				initInterface();
+    				
+    				contentPane.revalidate();
+    				
+    				contentPane.repaint();
+    				
+    			}
+                
+            }
+			
+		});
+		
+		menuBar.add(buttonImport);
+		
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
+		
+		initInterface();
+		
+	}
+	
+	/**
+	 * Initalizes the games interface.
+	 * 
+	 * Initalizes the field table with the board then creates the buttons.
+	 */
+	void initInterface(){
 		
 		tableModel = new BallGameTableModel(board.getField(),ball.getRow(),ball.getColumn());
 		
@@ -86,7 +150,7 @@ public class CreateWindow extends JFrame {
 		setWallsBackground();
 		
 		initButtons(ball);
-		
+
 		contentPane.add(table, BorderLayout.CENTER);
 		
 	}
