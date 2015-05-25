@@ -1,4 +1,3 @@
-# ball.game
 Ball Game
 =========
 
