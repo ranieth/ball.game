@@ -16,7 +16,7 @@ import ball.game.Board.Ball;
 public class SwingWindow extends Window {
 
 	/**
-	 * Contains the opened files name
+	 * Contains the opened files name.
 	 */
 	String filename;
 
