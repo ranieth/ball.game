@@ -68,7 +68,7 @@ public class Board {
 	private static Logger logger = LoggerFactory.getLogger(Board.class);
 	
 	/**
-	 * Constructs the board with the hard coded default parameters
+	 * Constructs the board with the hard coded default parameters.
 	 * 
 	 * Constructs the board with the hard coded default parameters (needed for ProgTech)
 	 */
