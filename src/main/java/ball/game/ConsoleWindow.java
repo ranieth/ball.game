@@ -6,15 +6,44 @@ import java.io.InputStreamReader;
 
 import ball.game.Board.Ball;
 
+/**
+ * Class for playing the game in a terminal window.
+ * 
+ * @author ranieth
+ *
+ */
 public class ConsoleWindow extends Window{
 
+	/**
+	 * The board of the game.
+	 */
 	Board board;
+	/**
+	 * The ball of the game.
+	 */
 	Board.Ball ball;
+	/**
+	 * Variable to scan player inputs from standard input.
+	 */
 	BufferedReader bufferRead;
+	/**
+	 * Variable to store player input command.
+	 */
 	String read;
+	/**
+	 * Constant to clear the screen.
+	 */
 	final String ANSI_CLS;
+	/**
+	 * Contant to reset cursor after screen clear.
+	 */
 	final String ANSI_HOME;
 	
+	/**
+	 * Constructs the game and utilities to play it in terminal window.
+	 * 
+	 * @param filename the input xml file contains board parameters
+	 */
 	public ConsoleWindow(String filename){
 
 		board = new Board(filename);
@@ -27,6 +56,11 @@ public class ConsoleWindow extends Window{
 		
 	}
 	
+	/**
+	 * Overrided method from Window class to handle game playment.
+	 * 
+	 * Overrided method to handle the game field, receive player inputs.
+	 */
 	@Override
 	public void Play() {
 

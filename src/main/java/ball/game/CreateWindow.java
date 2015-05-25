@@ -16,18 +16,56 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.JTable;
 
+/**
+ * Class for create and handle swing window and its events.
+ * 
+ * @author ranieth
+ *
+ */
 public class CreateWindow extends JFrame {
 
+	/**
+	 * The pane for the interfaces contents.
+	 */
 	private JPanel contentPane;
+	/**
+	 * Table to print out the game field.
+	 */
 	private JTable table;
+	/**
+	 * Table model to handle the changes of the field on the interface.
+	 */
 	BallGameTableModel tableModel;
+	/**
+	 * Button to move up the ball on the field.
+	 */
 	JButton buttonUp;
+	/**
+	 * Button to move down the ball on the field.
+	 */
 	JButton buttonDown;
+	/**
+	 * Button to move left the ball on the field.
+	 */
 	JButton buttonLeft;
+	/**
+	 * Button to move right the ball on the field.
+	 */
 	JButton buttonRight;
-	
+
+	/**
+	 * Boolean variable to determine win after a button press and interface repaint.
+	 */
 	boolean win = false;
 	
+	/**
+	 * Constructs the window for the game.
+	 * 
+	 * Constructs the window pane, and create the content of the window.
+	 * 
+	 * @param board the board of the game
+	 * @param ball the ball of the game
+	 */
 	public CreateWindow(Board board, Board.Ball ball) {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -52,7 +90,13 @@ public class CreateWindow extends JFrame {
 		contentPane.add(table, BorderLayout.CENTER);
 		
 	}
-
+	
+	/**
+	 * Resizes all of the columns to a given size.
+	 * 
+	 * @param count the count of columns on the game board
+	 * @param size the wanted size of the columns
+	 */
 	void resizeColumns(int count,int size){
 		
 		for(int i = 0;i < count;i++){
@@ -63,6 +107,11 @@ public class CreateWindow extends JFrame {
 		
 	}
 	
+	/**
+	 * Sets the text align to center in the columns.
+	 * 
+	 * @param count the count of columns on the game board
+	 */
 	void setTextAlign(int count){
 		
 		DefaultTableCellRenderer renderer = new DefaultTableCellRenderer();
@@ -76,6 +125,9 @@ public class CreateWindow extends JFrame {
 		
 	}
 	
+	/**
+	 * Sets black background to walls on game board.
+	 */
 	void setWallsBackground(){
 
 		for(int j = 0;j < table.getColumnCount();j++){
@@ -86,6 +138,14 @@ public class CreateWindow extends JFrame {
 			
 	}
 	
+	/**
+	 * Initalizes the moving buttons.
+	 * 
+	 * Initalizes the buttons, adds them to the content pane and call the event handler initalizer
+	 * functions.
+	 * 
+	 * @param ball the ball of the game board
+	 */
 	void initButtons(Board.Ball ball){
 		
 		buttonUp = new JButton("Up");
@@ -106,22 +166,44 @@ public class CreateWindow extends JFrame {
 		
 	}
 	
+	/**
+	 * Initalizes the action listener to the button which moves up the ball on the board.
+	 * 
+	 * @param ball the ball of the game board
+	 */
 	void setupButtonUp(Board.Ball ball){
 		
 		buttonUp.addActionListener(e -> {
 			
 			tableModel.setValueAt(" ", ball.getRow(), ball.getColumn());
 			
-			ball.moveUp();
+			if(ball.moveUp()){
+				
+				win = true;
+				
+			}
 
 			tableModel.setValueAt("B", ball.getRow(), ball.getColumn());
 			
 			this.repaint();
+
+			if(win){
+
+				JOptionPane.showMessageDialog(null,"You win!");
+				setVisible(false);
+				dispose();
+				
+			}
 			
 		});
 		
 	}
 
+	/**
+	 * Initalizes the action listener to the button which moves down the ball on the board.
+	 * 
+	 * @param ball the ball of the game board
+	 */
 	void setupButtonDown(Board.Ball ball){
 		
 		buttonDown.addActionListener(e -> {
@@ -149,23 +231,45 @@ public class CreateWindow extends JFrame {
 		});
 		
 	}
-	
+
+	/**
+	 * Initalizes the action listener to the button which moves right the ball on the board.
+	 * 
+	 * @param ball the ball of the game board
+	 */
 	void setupButtonRight(Board.Ball ball){
 		
 		buttonRight.addActionListener(e -> {
 			
 			tableModel.setValueAt(" ", ball.getRow(), ball.getColumn());
 			
-			ball.moveRight();
+			if(ball.moveRight()){
+				
+				win = true;
+				
+			}
 
 			tableModel.setValueAt("B", ball.getRow(), ball.getColumn());
 			
 			this.repaint();
+
+			if(win){
+
+				JOptionPane.showMessageDialog(null,"You win!");
+				setVisible(false);
+				dispose();
+				
+			}
 			
 		});
 		
 	}
-	
+
+	/**
+	 * Initalizes the action listener to the button which moves left the ball on the board.
+	 * 
+	 * @param ball the ball of the game board
+	 */
 	void setupButtonLeft(Board.Ball ball){
 
 		
@@ -173,22 +277,54 @@ public class CreateWindow extends JFrame {
 			
 			tableModel.setValueAt(" ", ball.getRow(), ball.getColumn());
 			
-			ball.moveLeft();
+			if(ball.moveLeft()){
+				
+				win = true;
+				
+			}
 
 			tableModel.setValueAt("B", ball.getRow(), ball.getColumn());
 			
 			this.repaint();
+
+			if(win){
+
+				JOptionPane.showMessageDialog(null,"You win!");
+				setVisible(false);
+				dispose();
+				
+			}
 			
 		});
 		
 	}
 	
+	/**
+	 * Class to create a cell renderer to the table.
+	 * 
+	 * @author ranieth
+	 *
+	 */
 	public class WallCellRenderer extends DefaultTableCellRenderer {
 		
+		/**
+		 * Overrided method which creates the renderer to the table.
+		 * 
+		 * Overrided method which creates the renderer to the table. The renderer sets
+		 * all the walls background to black in the table.
+		 * 
+		 * @param table the table object of the interface
+		 * @param value the value of the actual cell in the table
+		 * @param isSelected <code>true</code> if the actual cell is selected, <code>false</code> otherwise
+		 * @param hasFocus <code>true</code> if the actual cell is focused, <code>false</code> otherwise
+		 * @param row the row index of the actual cell
+		 * @param column the column index of the actual cell
+		 * 
+		 * @return returns with the customized label for the cell
+		 */
 		@Override
 		public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
 			
-			//Cells are by default rendered as a JLabel.
 			JLabel label = (JLabel) super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
 						
 										
@@ -203,7 +339,6 @@ public class CreateWindow extends JFrame {
 				
 			}
 			
-			//Return the JLabel which renders the cell.
 			return label;
 			  
 		}

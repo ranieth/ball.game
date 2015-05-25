@@ -6,10 +6,26 @@ import java.util.Collections;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
 
+/**
+ * Class to create a table model for the games interface table.
+ * 
+ * @author ranieth
+ *
+ */
 public class BallGameTableModel implements TableModel {
 
+	/**
+	 * Board of the game contains the representing string values of the elements of the field.
+	 */
 	ArrayList<ArrayList<String>> Board = new ArrayList<ArrayList<String>>();
 	
+	/**
+	 * Constructs the table model for handling the table interface.
+	 * 
+	 * @param Field the actual field of the game
+	 * @param start_row the starting row coordinate of the game
+	 * @param start_column the starting column coordinate of the game
+	 */
 	public BallGameTableModel(ArrayList<ArrayList<Integer>> Field, int start_row, int start_column){
 		
 		for(int i = 0;i < Field.size();i++){
@@ -40,7 +56,12 @@ public class BallGameTableModel implements TableModel {
 		
 	}
 
-	
+	/**
+	 * Gives back the count of rows in the table.
+	 * 
+	 * @return the count of rows in the table
+	 * @see javax.swing.table.TableModel#getRowCount()
+	 */
 	@Override
 	public int getRowCount() {
 
@@ -48,6 +69,12 @@ public class BallGameTableModel implements TableModel {
 		
 	}
 
+	/**
+	 * Gives back the count of columns in the table.
+	 * 
+	 * @return the count of columns in the table
+	 * @see javax.swing.table.TableModel#getColumnCount()
+	 */
 	@Override
 	public int getColumnCount() {
 		
@@ -55,6 +82,13 @@ public class BallGameTableModel implements TableModel {
 		
 	}
 
+	/**
+	 * Gives back the name of the wanted column.
+	 * 
+	 * @param columnIndex the index of the wanted column
+	 * @return the name of the wanted column
+	 * @see javax.swing.table.TableModel#getColumnName(int)
+	 */
 	@Override
 	public String getColumnName(int columnIndex) {
 
@@ -62,6 +96,13 @@ public class BallGameTableModel implements TableModel {
 		
 	}
 
+	/**
+	 * Returns with the class of the wanted column
+	 * 
+	 * @param columnIndex the index of the wanted column
+	 * @return the class of the wanted column
+	 * @see javax.swing.table.TableModel#getColumnClass(int)
+	 */
 	@Override
 	public Class<?> getColumnClass(int columnIndex) {
 
@@ -69,6 +110,13 @@ public class BallGameTableModel implements TableModel {
 		
 	}
 
+	/**
+	 * Returns with <code>true</code> if the wanted cell is editable, <code>false</code> otherwise.
+	 * 
+	 * @param rowIndex the index of the wanted cells row
+	 * @param columnIndex the index of the wanted cells column
+	 * @return <code>true</code> if the wanted cell is editable, <code>false</code> otherwise
+	 */
 	@Override
 	public boolean isCellEditable(int rowIndex, int columnIndex) {
 		
@@ -76,6 +124,13 @@ public class BallGameTableModel implements TableModel {
 		
 	}
 
+	/**
+	 * Return with the wanted cells value in the table.
+	 * 
+	 * @param rowIndex the index of the wanted cells row
+	 * @param columnIndex the index of the wanted cells column
+	 * return the value of the wanted cell
+	 */
 	@Override
 	public Object getValueAt(int rowIndex, int columnIndex) {
 		
@@ -83,6 +138,13 @@ public class BallGameTableModel implements TableModel {
 		
 	}
 
+	/**
+	 * Sets the value of a cell in the table.
+	 * 
+	 * @param aValue the new value of the cell
+	 * @param rowIndex the index of the row of the cell
+	 * @param columnIndex the index of the column of the cell
+	 */
 	@Override
 	public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
 
@@ -90,12 +152,22 @@ public class BallGameTableModel implements TableModel {
 		
 	}
 
+	/**
+	 * Adds listener to the table model.
+	 * 
+	 * Not used!
+	 */
 	@Override
 	public void addTableModelListener(TableModelListener l) {
 		// TODO Auto-generated method stub
 		
 	}
 
+	/**
+	 * Removes listener from the table model.
+	 * 
+	 * Not used!
+	 */
 	@Override
 	public void removeTableModelListener(TableModelListener l) {
 		// TODO Auto-generated method stub
