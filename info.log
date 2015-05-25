@@ -1,203 +1,26 @@
-23:03:41.618 [main] INFO  ball.game.Board - Creating game board
-23:03:41.750 [main] INFO  ball.game.Board - Setting up ball on 0,0
-23:03:41.753 [main] INFO  ball.game.Board - Setting up start coordinates for ball 0,0
-23:03:41.753 [main] INFO  ball.game.Board - Setting up board goal cell 5,0
-23:03:41.753 [main] INFO  ball.game.Board - Moving the ball down on the board from 0,0
-23:03:41.753 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 1,0
-23:03:41.753 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 1,0
-23:03:41.753 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 2,0
-23:03:41.753 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 2,0
-23:03:41.753 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 3,0
-23:03:41.754 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 3,0
-23:03:41.754 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 4,0
-23:03:41.754 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 4,0
-23:03:41.754 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 5,0
-23:03:41.754 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 5,0
-23:03:41.754 [main] INFO  ball.game.Board - Ball reached goal cell at 5,0
-23:03:41.760 [main] INFO  ball.game.Board - Creating game board
-23:03:41.761 [main] INFO  ball.game.Board - Setting up cell value at provided coordinates 1,1
-23:03:41.762 [main] INFO  ball.game.Board - Creating game board
-23:03:41.763 [main] INFO  ball.game.Board - Setting up ball on 0,9
-23:03:41.763 [main] INFO  ball.game.Board - Setting up start coordinates for ball 0,9
-23:03:41.763 [main] INFO  ball.game.Board - Setting up board goal cell 0,5
-23:03:41.763 [main] INFO  ball.game.Board - Moving the ball left on the board
-23:03:41.763 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,8
-23:03:41.763 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,8
-23:03:41.763 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,7
-23:03:41.763 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,7
-23:03:41.763 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,6
-23:03:41.763 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,6
-23:03:41.764 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,5
-23:03:41.764 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,5
-23:03:41.764 [main] INFO  ball.game.Board - Ball reached goal cell at 0,5
-23:03:41.765 [main] INFO  ball.game.Board - Creating game board
-23:03:41.766 [main] INFO  ball.game.Board - Creating game board
-23:03:41.766 [main] INFO  ball.game.Board - Setting up ball on 1,3
-23:03:41.766 [main] INFO  ball.game.Board - Setting up start coordinates for ball 1,3
-23:03:41.767 [main] INFO  ball.game.Board - Creating game board
-23:03:41.768 [main] INFO  ball.game.Board - Reading game from file ball.game.001.xml
-23:03:41.768 [main] INFO  ball.game.Board - Reading game board from xml
-23:03:41.770 [main] INFO  ball.game.Board - Creating game board
-23:03:41.771 [main] INFO  ball.game.Board - Setting up board goal cell 9,4
-23:03:41.771 [main] INFO  ball.game.Board - Setting up wall on the board 0,1
-23:03:41.772 [main] INFO  ball.game.Board - Setting up wall on the board 0,7
-23:03:41.772 [main] INFO  ball.game.Board - Setting up wall on the board 1,4
-23:03:41.772 [main] INFO  ball.game.Board - Setting up wall on the board 1,12
-23:03:41.772 [main] INFO  ball.game.Board - Setting up wall on the board 3,5
-23:03:41.772 [main] INFO  ball.game.Board - Setting up wall on the board 3,11
-23:03:41.773 [main] INFO  ball.game.Board - Setting up wall on the board 4,2
-23:03:41.773 [main] INFO  ball.game.Board - Setting up wall on the board 5,7
-23:03:41.773 [main] INFO  ball.game.Board - Setting up wall on the board 5,9
-23:03:41.773 [main] INFO  ball.game.Board - Setting up wall on the board 6,6
-23:03:41.774 [main] INFO  ball.game.Board - Setting up wall on the board 6,12
-23:03:41.774 [main] INFO  ball.game.Board - Setting up wall on the board 8,0
-23:03:41.774 [main] INFO  ball.game.Board - Setting up wall on the board 8,8
-23:03:41.774 [main] INFO  ball.game.Board - Setting up wall on the board 9,3
-23:03:41.774 [main] INFO  ball.game.Board - Setting up wall on the board 9,5
-23:03:41.775 [main] INFO  ball.game.Board - Setting up wall on the board 10,4
-23:03:41.775 [main] INFO  ball.game.Board - Setting up wall on the board 11,7
-23:03:41.775 [main] INFO  ball.game.Board - Setting up wall on the board 11,11
-23:03:41.776 [main] INFO  ball.game.Board - Creating game board
-23:03:41.777 [main] INFO  ball.game.Board - Setting up wall on the board 4,3
-23:03:41.777 [main] INFO  ball.game.Board - Setting up board goal cell 5,5
-23:03:41.777 [main] INFO  ball.game.Board - Initing starting position 6,4
-23:03:41.777 [main] INFO  ball.game.Board - Setting up ball on 6,4
-23:03:41.777 [main] INFO  ball.game.Board - Printing out actual field
-23:03:41.782 [main] INFO  ball.game.Board - Creating game board
-23:03:41.782 [main] INFO  ball.game.Board - Creating game board
-23:03:41.783 [main] INFO  ball.game.Board - Initing starting position 0,1
-23:03:41.783 [main] INFO  ball.game.Board - Setting up ball on 0,1
-23:03:41.783 [main] INFO  ball.game.Board - Creating game board
-23:03:41.783 [main] INFO  ball.game.Board - Setting up cell value at provided coordinates 1,0
-23:03:41.784 [main] INFO  ball.game.Board - Creating game board
-23:03:41.784 [main] INFO  ball.game.Board - Creating game board
-23:03:41.785 [main] INFO  ball.game.Board - Setting up ball on 0,0
-23:03:41.785 [main] INFO  ball.game.Board - Setting up start coordinates for ball 0,0
-23:03:41.785 [main] INFO  ball.game.Board - Moving the ball down on the board from 0,0
-23:03:41.785 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 1,0
-23:03:41.785 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 1,0
-23:03:41.785 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 2,0
-23:03:41.785 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 2,0
-23:03:41.785 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 3,0
-23:03:41.785 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 3,0
-23:03:41.785 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 4,0
-23:03:41.785 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 4,0
-23:03:41.786 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 5,0
-23:03:41.786 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 5,0
-23:03:41.786 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 6,0
-23:03:41.786 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 6,0
-23:03:41.786 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 7,0
-23:03:41.786 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 7,0
-23:03:41.786 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 8,0
-23:03:41.786 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 8,0
-23:03:41.786 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 9,0
-23:03:41.786 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 9,0
-23:03:41.786 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 10,0
-23:03:41.787 [main] INFO  ball.game.Board - Ball reached cell 9,0
-23:03:41.787 [main] INFO  ball.game.Board - Creating game board
-23:03:41.787 [main] INFO  ball.game.Board - Setting up ball on 0,9
-23:03:41.787 [main] INFO  ball.game.Board - Setting up start coordinates for ball 0,9
-23:03:41.787 [main] INFO  ball.game.Board - Moving the ball left on the board
-23:03:41.788 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,8
-23:03:41.788 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,8
-23:03:41.788 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,7
-23:03:41.788 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,7
-23:03:41.788 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,6
-23:03:41.788 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,6
-23:03:41.788 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,5
-23:03:41.788 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,5
-23:03:41.788 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,4
-23:03:41.788 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,4
-23:03:41.788 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,3
-23:03:41.788 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,3
-23:03:41.789 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,2
-23:03:41.789 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,2
-23:03:41.789 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,1
-23:03:41.789 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,1
-23:03:41.789 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,0
-23:03:41.789 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,0
-23:03:41.789 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,-1
-23:03:41.789 [main] INFO  ball.game.Board - Ball reached cell 0,0
-23:03:41.790 [main] INFO  ball.game.Board - Creating game board
-23:03:41.790 [main] INFO  ball.game.Board - Creating game board
-23:03:41.791 [main] INFO  ball.game.Board - Setting up ball on 9,0
-23:03:41.791 [main] INFO  ball.game.Board - Setting up start coordinates for ball 9,0
-23:03:41.795 [main] INFO  ball.game.Board - Moving the ball up on the board from 9,0
-23:03:41.796 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 8,0
-23:03:41.796 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 8,0
-23:03:41.796 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 7,0
-23:03:41.796 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 7,0
-23:03:41.796 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 6,0
-23:03:41.796 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 6,0
-23:03:41.796 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 5,0
-23:03:41.796 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 5,0
-23:03:41.797 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 4,0
-23:03:41.797 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 4,0
-23:03:41.797 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 3,0
-23:03:41.797 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 3,0
-23:03:41.797 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 2,0
-23:03:41.797 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 2,0
-23:03:41.797 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 1,0
-23:03:41.797 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 1,0
-23:03:41.797 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,0
-23:03:41.797 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,0
-23:03:41.797 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates -1,0
-23:03:41.797 [main] INFO  ball.game.Board - Ball reached cell 0,0
-23:03:41.800 [main] INFO  ball.game.Board - Creating game board
-23:03:41.801 [main] INFO  ball.game.Board - Setting up board goal cell 0,1
-23:03:41.802 [main] INFO  ball.game.Board - Creating game board
-23:03:41.802 [main] INFO  ball.game.Board - Setting up wall on the board 0,1
-23:03:41.803 [main] INFO  ball.game.Board - Creating game board
-23:03:41.803 [main] INFO  ball.game.Board - Setting up ball on 0,0
-23:03:41.803 [main] INFO  ball.game.Board - Setting up start coordinates for ball 0,0
-23:03:41.803 [main] INFO  ball.game.Board - Moving the ball right on the board
-23:03:41.803 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,1
-23:03:41.803 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,1
-23:03:41.803 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,2
-23:03:41.803 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,2
-23:03:41.803 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,3
-23:03:41.803 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,3
-23:03:41.804 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,4
-23:03:41.804 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,4
-23:03:41.804 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,5
-23:03:41.804 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,5
-23:03:41.804 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,6
-23:03:41.804 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,6
-23:03:41.804 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,7
-23:03:41.804 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,7
-23:03:41.804 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,8
-23:03:41.804 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,8
-23:03:41.804 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,9
-23:03:41.804 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,9
-23:03:41.804 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,10
-23:03:41.805 [main] INFO  ball.game.Board - Ball reached cell 0,9
-23:03:41.805 [main] INFO  ball.game.Board - Creating game board
-23:03:41.806 [main] INFO  ball.game.Board - Setting up ball on 0,0
-23:03:41.806 [main] INFO  ball.game.Board - Setting up start coordinates for ball 0,0
-23:03:41.806 [main] INFO  ball.game.Board - Setting up board goal cell 0,5
-23:03:41.806 [main] INFO  ball.game.Board - Moving the ball right on the board
-23:03:41.806 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,1
-23:03:41.806 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,1
-23:03:41.806 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,2
-23:03:41.806 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,2
-23:03:41.806 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,3
-23:03:41.807 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,3
-23:03:41.807 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,4
-23:03:41.807 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,4
-23:03:41.807 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 0,5
-23:03:41.807 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 0,5
-23:03:41.807 [main] INFO  ball.game.Board - Ball reached goal cell at 0,5
-23:03:41.810 [main] INFO  ball.game.Board - Creating game board
-23:03:41.813 [main] INFO  ball.game.Board - Setting up ball on 9,0
-23:03:41.813 [main] INFO  ball.game.Board - Setting up start coordinates for ball 9,0
-23:03:41.813 [main] INFO  ball.game.Board - Setting up board goal cell 5,0
-23:03:41.813 [main] INFO  ball.game.Board - Moving the ball up on the board from 9,0
-23:03:41.814 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 8,0
-23:03:41.814 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 8,0
-23:03:41.814 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 7,0
-23:03:41.814 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 7,0
-23:03:41.814 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 6,0
-23:03:41.814 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 6,0
-23:03:41.814 [main] INFO  ball.game.Board - Checking field has wall / table end on provided coordinates 5,0
-23:03:41.814 [main] INFO  ball.game.Board - Checking field has goal cell on provided coordinates 5,0
-23:03:41.814 [main] INFO  ball.game.Board - Ball reached goal cell at 5,0
+23:32:42.999 [main] INFO  ball.game.BallGame - User picked swing window interface
+23:32:43.104 [main] INFO  ball.game.BallGame - Starting game
+23:32:43.396 [main] INFO  ball.game.BallGame - Ending game
+23:32:43.483 [AWT-EventQueue-0] INFO  ball.game.Board - Reading game from file ball.game.001.xml
+23:32:43.486 [AWT-EventQueue-0] INFO  ball.game.Board - Reading game board from xml
+23:32:43.489 [AWT-EventQueue-0] INFO  ball.game.Board - Creating game board
+23:32:43.490 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up board goal cell 9,4
+23:32:43.490 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 0,1
+23:32:43.490 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 0,7
+23:32:43.490 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 1,4
+23:32:43.491 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 1,12
+23:32:43.491 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 3,5
+23:32:43.491 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 3,11
+23:32:43.491 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 4,2
+23:32:43.491 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 5,7
+23:32:43.492 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 5,9
+23:32:43.493 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 6,6
+23:32:43.493 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 6,12
+23:32:43.493 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 8,0
+23:32:43.494 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 8,8
+23:32:43.494 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 9,3
+23:32:43.494 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 9,5
+23:32:43.495 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 10,4
+23:32:43.495 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 11,7
+23:32:43.495 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up wall on the board 11,11
+23:32:43.496 [AWT-EventQueue-0] INFO  ball.game.Board - Setting up ball on 2,8

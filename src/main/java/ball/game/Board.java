@@ -10,6 +10,12 @@ import java.net.URISyntaxException;
 import java.util.*;
 
 import javax.xml.parsers.*;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -43,6 +49,14 @@ public class Board {
 	 * Starting positions column.
 	 */
 	int start_column;
+	/**
+	 * Goal positions row.
+	 */
+	int goal_row;
+	/**
+	 * Goal positions column.
+	 */
+	int goal_column;
 	/**
 	 * Represents the actual board with integer values.
 	 */
@@ -240,6 +254,8 @@ public class Board {
 	public void setGoal(int row, int column){
 
 		logger.info("Setting up board goal cell {},{}",row,column);
+		goal_row = row;
+		goal_column = column;
 		Field.get(row).set(column, -1);
 		
 	}
@@ -516,6 +532,114 @@ public class Board {
 			e.printStackTrace();
 			
 		} catch (IOException e){
+			
+			e.printStackTrace();
+			
+		}
+		
+	}
+	
+	/**
+	 * Exports the actual board to the parameter file.
+	 * 
+	 * @param file export the board to this file
+	 */
+	public void saveFieldDOM(File file){
+		
+		logger.info("Exporing field");
+		
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		
+		DocumentBuilder builder;
+		
+		try {
+			
+			builder = factory.newDocumentBuilder();
+			
+			Document document = builder.newDocument();
+			
+			Element root = document.createElement("field");
+			
+			document.appendChild(root);
+			
+			Element size = document.createElement("size");
+			
+			Element rows = document.createElement("rows");
+			rows.appendChild(document.createTextNode(String.valueOf(row)));
+	
+			Element columns = document.createElement("columns");
+			columns.appendChild(document.createTextNode(String.valueOf(column)));
+			
+			size.appendChild(rows);
+			size.appendChild(columns);
+			
+			root.appendChild(size);
+			
+			Element start = document.createElement("start");
+			rows = document.createElement("row");
+			rows.appendChild(document.createTextNode(String.valueOf(start_row)));
+			columns = document.createElement("column");
+			columns.appendChild(document.createTextNode(String.valueOf(start_column)));
+			
+			start.appendChild(rows);
+			start.appendChild(columns);
+			
+			root.appendChild(start);
+			
+			Element goal = document.createElement("goal");
+			rows = document.createElement("row");
+			rows.appendChild(document.createTextNode(String.valueOf(goal_row)));
+			columns = document.createElement("column");
+			columns.appendChild(document.createTextNode(String.valueOf(goal_column)));
+			
+			goal.appendChild(rows);
+			goal.appendChild(columns);
+			
+			root.appendChild(goal);
+			
+			Element walls = document.createElement("walls");
+			
+			Element wall;
+			
+			for(int i = 0;i < row;i++){
+				
+				for(int j = 0;j < column;j++){
+					
+					if(Field.get(i).get(j) == 1){
+						
+						wall = document.createElement("wall");
+						
+						rows = document.createElement("row");
+						rows.appendChild(document.createTextNode(String.valueOf(i)));
+	
+						columns = document.createElement("columns");
+						columns.appendChild(document.createTextNode(String.valueOf(j)));
+						
+						wall.appendChild(rows);
+						wall.appendChild(columns);
+						
+						walls.appendChild(wall);
+						
+					}
+					
+				}
+				
+			}
+			
+			root.appendChild(walls);
+			
+			TransformerFactory transformerFactory = TransformerFactory.newInstance();
+			Transformer transformer = transformerFactory.newTransformer();
+			
+			DOMSource source = new DOMSource(document);
+			
+			StreamResult result = new StreamResult(file);
+			
+			transformer.transform(source, result);
+
+			logger.info("Field exported");
+			
+		} catch (ParserConfigurationException | TransformerException e) {
 			
 			e.printStackTrace();
 			
