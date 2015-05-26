@@ -10,11 +10,10 @@ Short hungarian description about the game:
 
 #### Control words to console version:
 
-*up - the ball goes up
-*down - the ball goes down
-*right - the ball goes right
-*left - the ball goes left
+* up - the ball goes up
+* down - the ball goes down
+* right - the ball goes right
+* left - the ball goes left
 
 Created by:
-> ranieth
 > Tamás Csopa
